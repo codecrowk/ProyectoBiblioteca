@@ -9,5 +9,9 @@ namespace Mvc.Controllers
     public IActionResult Update(){
       return View();
     }
+
+    public IActionResult Search(){
+      return View();
+    }
   }
 }
