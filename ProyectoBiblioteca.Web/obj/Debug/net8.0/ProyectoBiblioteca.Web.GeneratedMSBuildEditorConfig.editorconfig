@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/riwip5-001/Desktop/SANTIAGO MONA - NO BORRAR/C#/biblioteca/ProyectoBiblioteca/ProyectoBiblioteca.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/riwip5-001/Desktop/SANTIAGO MONA - NO BORRAR/C\#/biblioteca/ProyectoBiblioteca/ProyectoBiblioteca.Web/Views/Auth/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9JbmRleC5jc2h0bWw=
+[/home/riwip5-001/Desktop/SANTIAGO MONA - NO BORRAR/C\#/biblioteca/ProyectoBiblioteca/ProyectoBiblioteca.Web/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riwip5-001/Desktop/SANTIAGO MONA - NO BORRAR/C\#/biblioteca/ProyectoBiblioteca/ProyectoBiblioteca.Web/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riwip5-001/Desktop/SANTIAGO MONA - NO BORRAR/C\#/biblioteca/ProyectoBiblioteca/ProyectoBiblioteca.Web/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/riwip5-001/Desktop/SANTIAGO MONA - NO BORRAR/C\#/biblioteca/ProyectoBiblioteca/ProyectoBiblioteca.Web/Views/Shared/Error.cshtml]

@@ -3,7 +3,10 @@ namespace Mvc.Controllers
 {
     public class Auth : Controller
     {
-        public IActionResult Index(){
+        public IActionResult Login(){
+            return View();
+        }
+          public IActionResult Register(){
             return View();
         }
     }
