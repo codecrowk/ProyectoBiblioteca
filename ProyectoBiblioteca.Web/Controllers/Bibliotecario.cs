@@ -12,6 +12,9 @@ namespace Mvc.Controllers
          public IActionResult Registerbook(){
             return View();
         }
+        public IActionResult Viewbooks(){
+            return View();
+        }
 
     }
 }

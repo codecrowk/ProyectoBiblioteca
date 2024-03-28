@@ -1,0 +1,36 @@
+<div class="input-group">
+  <div class="form-outline" data-mdb-input-init>
+    <input type="search" id="form1" class="form-control" placeholder="Search"/>
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+   <th>#</th>
+   <th>Nombre</th>
+   <th>Autor</th>
+   <th>Genero</th>
+   <th>Idioma</th>
+   <th>Año Publicacion</th>
+   <th>Estado</th>
+   <th>Acciones</th>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+     <td>1</td>
+     <td>100 años de soledad</td>
+     <td>Gabriel Garcia Marquez </td>
+     <td>Historia</td>
+     <td>Español</td>
+     <td>Mayo 1967</td>
+     <td>Devuelto</td>
+     <td><a class="btn btn-info" asp-controller="Bibliotecario" asp-action="Viewbooks">Ver Detalles</a></td>
+
+    </tr>
+   
+  </tbody>
+</table>
+
+<a asp-controller="Bibliotecario" asp-action="Index"> 
+    <button class="btn btn-success" type="submit">volver</button>
+</a>
