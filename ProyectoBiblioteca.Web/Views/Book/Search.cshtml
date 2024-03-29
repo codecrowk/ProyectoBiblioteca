@@ -1,13 +1,31 @@
+@* Data values *@
 @{
   string[] tableHeaders = {"#", "Title", "Author", "Genre", "Language", "Publication Year", "State", "Actions"};
   string[] user = {"1", "Cada dia", "Issabela Allende", "Romance", "Spanish", "2009", "Avalible", "Delete"};
+  string[] bookOptions = {"title", "author", "genre", "language"};
+}
+@* Style, it could be done with css file, but just for practice Razor *@
+@{
+  @* Remove padding and margin *@
+  var removePandM = "mx-0 px-0";
 }
 <section>
-
-  <section id="seach_bar">
-    <div class="input-group mb-3">
-      <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
-      <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="basic-addon1">
+  <section id="seach_bar" class="mb-3">
+    <div class="row">
+      <div class="col-10 @removePandM">
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="basic-addon1">
+        </div>
+      </div>
+      <div class="col-2 @removePandM">
+        <select class="form-select" aria-label="book-filter">
+          @foreach (var option in bookOptions)
+          {
+            <option value="@option">@option</option>
+          }
+        </select>
+      </div>
     </div>
   </section>
 
@@ -31,4 +49,8 @@
       </tbody>
     </table> 
   </section>
+
+  <div>
+    <button type="button" class="btn btn-success btn-sm">Volver</button>
+  </div>
 </section>
