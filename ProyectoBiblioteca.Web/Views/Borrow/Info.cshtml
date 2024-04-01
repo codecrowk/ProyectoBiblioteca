@@ -1,0 +1,53 @@
+@{
+  var borrowDate = @DateTime.Now.ToString("dd/MM/yyyy");
+  var returnDate = @DateTime.Now.AddDays(10).ToString("dd/MM/yyyy");
+  int titlePosition = 0;
+  int textPosition = 1;
+}
+
+@{
+  string[,,] borrowInformation = 
+  {
+    {
+      {"Book", "El arte de la guerra"},
+      {"Book ID", "10230457"}
+    },
+    {
+      {"User name", "Jose Santiago Marulanda"},
+      {"Librian name", "Marcela Ortega Garcia"}
+    },
+    {
+      {"Borrow date", @borrowDate},
+      {"Return Date", @returnDate}
+    },
+  };
+  
+  // https://stackoverflow.com/questions/2843987/array-size-length-in-c-sharp  
+  var borrowLength = borrowInformation.GetLength(0);
+}
+
+<section id="header-title" class="mb-4">
+  <div class="row justify-content-center">
+    <div class="col-5 bg-danger rounded-pill text-center text-white">
+      <h3>Borrow Information</h3>
+    </div>
+  </div>
+</section>
+
+<section>
+  @for (var row = 0; row < borrowLength; row++)
+  {
+    <div class="d-flex">
+      <div class="w-50 ">
+        @* [row, container, element] *@
+        <h5>@borrowInformation[row, 0, titlePosition]</h5>
+        <p>@borrowInformation[row, 0, textPosition]</p>
+      </div>
+
+      <div class="w-50">
+        <h5>@borrowInformation[row, 1, titlePosition]</h5>
+        <p>@borrowInformation[row, 1, textPosition]</p>
+      </div>
+    </div>
+  }
+</section>

@@ -9,8 +9,10 @@ namespace Mvc.Controllers
     public IActionResult Update(){
       return View();
     }
-
     public IActionResult Search(){
+      return View();
+    }
+    public IActionResult Borrow(){
       return View();
     }
   }
